@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+.logo a{
+    padding: 10px;
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    color: yellow;
+    text-decoration: none;      /* xoa bo dau gach chan o link */
+    text-shadow: 1px 1px 2px rgb(1, 1, 1);   /* đổ bóng*/
+    text-transform: uppercase;
+}
+
+.small_menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.small_menu ul li{
+    text-align: right;
+}
+
+.small_menu ul li a{
+    font-size: 20px;
+    color: yellow;
+    text-decoration: none;
+    padding: 10px;
+    right: 0px;
+}
+.picture{
+    background-image: url(image/anhnen3.png);
+    height: 780px;
+    background-position: center;  /*ko co dong duoi ảnh sẽ bị vẽ thừa 2 bên khi thu nhỏ*/
+    background-size: cover;   /*cho anh theo trang khi phong to thu nho*/
+}
+.picture .float_box{
+    width: 700px;
+    height: 180px;
+    background-color: rgb(44, 43, 41, 0.8); /* chi so cuối là giup background trong suốt*/
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 200px;
+    margin: 0 auto;  /*top bottom = 0. right left tu dong de box dc can vao giua */
+    padding-top: 30px;
+    border-radius: 7px;
+}
+.float_box a{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.option ul{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.option ul li{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.option ul img{
+    height: 200px;
+    width: 100%;
+}
